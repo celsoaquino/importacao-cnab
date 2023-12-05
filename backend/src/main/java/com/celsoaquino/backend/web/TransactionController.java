@@ -18,7 +18,7 @@ public class TransactionController {
     }
 
     @GetMapping
-    @CrossOrigin(origins = {"http://localhost:9090"})
+    @CrossOrigin(origins = {"http://localhost:9090", "https://frontend-pagnet-ef5r.onrender.com"})
     public Iterable<TransactionReport> listAll() {
         return service.listTotalTransactionNameLoja();
     }
